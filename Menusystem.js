@@ -12,18 +12,18 @@
     
       $('.btn1').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			a = $(this).val();
-			parseInt(a ,10);
+			$('#myOutput').val($('#myOutput').val()+"Water :  "+$(this).val()+" ");
+			 
+			a =parseInt($(this).val(),10);
 			
 			result=sum(a);
 
         }) ;
         $('.btn2').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			b = $(this).val();
-			parseInt(b ,10);
+			$('#myOutput2').val($('#myOutput2').val() +"Hot Wings : "+$(this).val());
+			
+			b = parseInt($(this).val(),10);
 			result=sum(b);
 			
 
@@ -32,9 +32,9 @@
         
          $('.btn3').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			c = $(this).val();
-			parseInt(c ,10);
+			$('#myOutput3').val($('#myOutput3').val() +"Pizza : "+$(this).val());
+			 
+			c =parseInt($(this).val(),10);
 			result=sum(c);
 
         }) ;
@@ -42,34 +42,34 @@
         
            $('.btn4').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			d = $(this).val();
-			parseInt(d ,10);
+			$('#myOutput4').val($('#myOutput4').val() +"Sprite : "+$(this).val());
+			 
+			d = parseInt($(this).val(),10);
 			result=sum(d);
 
         }) ;
         $('.btn5').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			e = $(this).val();
-			parseInt(e ,10);
+			$('#myOutput5').val($('#myOutput5').val() +"Steaks : "+$(this).val());
+			
+			e = parseInt($(this).val(),10);
 			result=sum(e);
         }) ;
         
         
          $('.btn6').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			f = $(this).val();
-			parseInt(f ,10);
+			$('#myOutput6').val($('#myOutput6').val() +"Burgers : "+$(this).val());
+			 
+			f = parseInt($(this).val(),10);
 			result=sum(f);
         }) ;
         
          $('.btn7').click(function(e) {
             
-			$('#display').val($('#display').val() +$(this).val());
-			g= $(this).val();
-			parseInt(g ,10);
+			$('#myOutput7').val($('#myOutput7').val() +"Coca Cola : "+$(this).val());
+			 
+			g= parseInt($(this).val(),10);
 			result=sum(g);
 
         }) ;
@@ -90,7 +90,21 @@
         
 
 		$("#clear").click(function() {
-			$('#display').val('');
+			
+			result=parseInt(0,10);
+			$('#myOutput').val('');
+			$('#myOutput1').val('');
+			$('#myOutput2').val('');
+			$('#myOutput3').val('');
+			$('#myOutput4').val('');
+			$('#myOutput5').val('');
+			$('#myOutput6').val('');
+			$('#myOutput7').val('');
+			
+			
+			
+			
+			
 		});
 		
 		
@@ -106,7 +120,7 @@
        
 		 
 		 
-		 $('#display').val("Your Total Bill is : "+result);
+		alert("Your Total Bill is : "+result);
 		 
     });
 
